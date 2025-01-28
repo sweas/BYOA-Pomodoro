@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Focus Timer</h1>
+        <div class="timer" role="timer" aria-live="polite">
+            <span id="minutes">25</span><span class="separator">:</span><span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start" aria-label="Start or pause timer">Start</button>
+            <button id="reset" aria-label="Reset timer">Reset</button>
+        </div>
+        <div class="mode" role="radiogroup" aria-label="Timer mode selection">
+            <span class="work-label">Focus</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="modeToggle" role="switch" aria-label="Toggle between focus and break mode">
+                <span class="slider"></span>
+            </label>
+            <span class="break-label">Break</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
